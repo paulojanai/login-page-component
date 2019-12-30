@@ -8,7 +8,7 @@ import PropType from 'prop-types'
 function Login(props) {
   console.table(props.paletteColors)
   return (
-    <Container>
+    <Container colors={props.paletteColors}>
       <div>
         <Row>
           <Col md={5}>
@@ -21,7 +21,7 @@ function Login(props) {
                 <p className="subtitle">Welcome back. Please login <br /> to your account.</p>
                 <div className="form">
                   <h5 className="form-title">Sign in</h5>
-                  <Form />
+                  <Form colors={props.paletteColors}/>
                 </div>
               </Col>
               <div className="text-center">

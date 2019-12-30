@@ -11,8 +11,4 @@ const colors = {
   DarkBlackBlue: '#171e29'
 };
 
-function PalleteColors(){
-
-}
-
 export default colors;
