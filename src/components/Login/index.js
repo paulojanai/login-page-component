@@ -5,23 +5,22 @@ import Col from 'react-bootstrap/Col';
 import Form from './Form/index'
 import PropType from 'prop-types'
 
-function Login(props) {
-  console.table(props.paletteColors)
+function Login({ logo, nameCompany, illustration }) {
   return (
-    <Container colors={props.paletteColors}>
+    <Container >
       <div>
         <Row>
           <Col md={5}>
             <Row className="flex-column left">
               <Col>
                 {/* props */}
-                <img src={props.logo} className="logo"/>
+                <img src={logo} className="logo"/>
                 {/* props */}
-                <p className="title"><span className="dark-turquoise">We are</span> {props.nameCompany}</p>
+                <p className="title"><span className="dark-turquoise">We are</span> {nameCompany}</p>
                 <p className="subtitle">Welcome back. Please login <br /> to your account.</p>
                 <div className="form">
                   <h5 className="form-title">Sign in</h5>
-                  <Form colors={props.paletteColors}/>
+                  <Form />
                 </div>
               </Col>
               <div className="text-center">
@@ -32,7 +31,7 @@ function Login(props) {
           <Col md={7} className="right">
               <div
                 className="row flex-column justify-content-between align-items-center">
-                  <img src={props.illustration} className="illustration img-fluid"/>
+                  <img src={illustration} className="illustration img-fluid"/>
                 <div className="text-center caption-illustration">
                   <h3 className="form-title">Lib Library</h3>
                   <p className="subtitle">Catalog and Manage your books with insdustry <br /> leading software.</p>
