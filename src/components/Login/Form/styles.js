@@ -3,11 +3,12 @@ import colors from "../../../themes/theme";
 
 export const Container = styled.div`
   .btn {
-    font-size: 1em;
+    font-size: 0.8em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
   }
+
   .btn-primary {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     font-weight: 500;
     background-color: ${colors.DarkTurquoise};
     border: none;
@@ -22,6 +23,7 @@ export const Container = styled.div`
       box-shadow: none !important;
     }
   }
+
   .btn-link {
     margin: 0;
     padding: 0;
@@ -33,8 +35,8 @@ export const Container = styled.div`
   .form-icons {
     position: relative;
     color: ${colors.Gray};
-    top: 1.5em;
-    left: 0.8em;
+    top: 2em;
+    left: 1.2em;
   }
 
   .focus-visible {
@@ -49,9 +51,10 @@ export const Container = styled.div`
   input[type="password"],
   input[type="email"] {
     margin-top: -0.4em;
+    border-color: ${colors.Gainsboro};
     font-size: 0.8em;
-    padding-top: 1.3em;
-    padding-bottom: 1.3em;
-    padding-left: 2.8em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3.8em;
   }
 `;

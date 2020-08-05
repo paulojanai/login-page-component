@@ -77,3 +77,18 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const ContainerInfo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+
+  .btn-facebook {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+  }
+`;
